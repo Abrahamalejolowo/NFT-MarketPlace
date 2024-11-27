@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { NFTS } from "./Database";
+import { Link } from "react-router-dom";
 
 function Marketplace() {
   return (
@@ -23,23 +25,23 @@ function Marketplace() {
         </div>
         <hr className="text-gray-400 mt-[5%]" />
         <span className="flex sm:mx-[15%] sm:min-mx-[10%] grid-mx-[10%] lg:w-[40%] lg:mx-auto justify-between mt-5 pb-4">
-          <a href="" className="text-white text-xl ">
+           <Link    className="text-white text-xl ">
             NTFs{" "}
             <span className="bg-gray-400 rounded-xl w-[20px] h-[20px]">
               320
             </span>
-          </a>
-          <a href="" className="text-white text-xl">
+           </Link>
+           <Link   className="text-white text-xl">
             Collection <span className="bg-gray-400 rounded-xl ">67</span>
-          </a>
+           </Link>
         </span>
       </div>
-      <a
-        href=""
+       <div
+         
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-8 py-4 bg-[#3b3b3b] "
       >
         {NFTS.map((rank, index) => (
-          <div key={index}>
+          <Link to={`/marketplace/${rank.id}`} key={index}>
             <div className="bg-[#2b2b2b] rounded-lg overflow-hidden shadow-lg pb-10 hover:scale-105 transition-transform">
               <img
                 src={rank.image}
@@ -64,9 +66,9 @@ function Marketplace() {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
-      </a>
+       </div>
     </body>
   );
 }

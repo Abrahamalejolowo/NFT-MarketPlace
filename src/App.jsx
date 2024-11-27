@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import BrowseCategory from "./component/BrowseCategory";
 import DiscoverMore from "./component/DIscoverMore";
@@ -22,15 +23,15 @@ function App() {
   return (
     <Router>
       <div className="bg-[#2b2b2b]">
-        <About/>
-        {/* <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/marketplace/:id" element={<About />} />
           <Route path="/Rankings" element={<Rankings />} />
         </Routes>
-        <FooterSce /> */}
+        <FooterSce />
       </div>
     </Router>
   );
