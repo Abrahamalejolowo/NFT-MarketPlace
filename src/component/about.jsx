@@ -30,7 +30,7 @@ function About() {
   }, [id])
 
   const HandleBack = () => {
-    history.back(-1);
+    history.back(-1)
   }
 
   return (
