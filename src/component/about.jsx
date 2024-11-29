@@ -41,7 +41,7 @@ function About() {
     <div className="bg-[#2b2b2b] pt-28 min-h-screen text-white">
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <p className="text-lg font-bold">Loading...</p>
+          <p className="text-lg font-bold">Loading.....</p>
         </div>
       ) : data ? (
         <div className="container mx-auto px-5 lg:px-20">
