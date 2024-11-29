@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Marketplace() {
   return (
-    <body className="pt-[5%]">
+    <body className="pt-[10%]">
       <div className="bg-[#2B2B2B]">
         <header className="ml-[10%] pt-10">
           <h1 className="font-serif lg:text-5xl text-4xl  text-white">
@@ -36,27 +36,25 @@ function Marketplace() {
            </Link>
         </span>
       </div>
-       <div
-         
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-8 py-4 bg-[#3b3b3b] "
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-4 bg-[#3b3b3b] mx-auto px-[11%] pr-[10%]"
       >
         {NFTS.map((rank, index) => (
           <Link to={`/marketplace/${rank.id}`} key={index}>
-            <div className="bg-[#2b2b2b] rounded-lg overflow-hidden shadow-lg pb-10 hover:scale-105 transition-transform">
+            <div className="bg-[#2b2b2b] lg:w-[90%] w-full rounded-2xl overflow-hidden shadow-lg pb-5 hover:scale-105 transition-transform ">
               <img
                 src={rank.image}
                 alt=""
-                className="w-full h-50   object-cover"
+                className="lg:w-50 lg:h-45  w-full"
               />
-              <div className="mx-[5%]">
-                <h1 className="text-[25px] text-white mt-5">{rank.name}</h1>
-                <div className="flex mt-2 hover:scale-105 transition-transform">
-                  <img src={rank.logo} alt="" className=" w-9 h-9" />
+              <div className="mx-[5%] ">
+                <h1 className="text-[20px] text-white mt-2">{rank.name}</h1>
+                <div className="flex mt-1 ">
+                  <img src={rank.logo} alt="" className=" w-6 h-5 mt-2" />
                   <p className="text-white font-thin text-[20px]">
                     {rank.logoName}
                   </p>
                 </div>
-                <div className="flex justify-between mt-4">
+                <div className="flex justify-between mt-1">
                   <p className="text-gray-400">Price</p>
                   <p className="text-gray-400">Highest Bid</p>
                 </div>

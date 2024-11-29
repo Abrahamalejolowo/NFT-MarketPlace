@@ -3,17 +3,17 @@ import { primaryTrendingImgS } from "./Database";
 
 function TrendingCol() {
   return (
-    <section className="px-auto py-12 max-w-7xl mx-auto font-[work sans]">
+    <section className="ml-[11b %] py-12 max-w-7xl mx-auto font-[work sans] w-[90%] -[10%]">
       <h1 className="text-4xl font-bold text-white">Trending Collection</h1>
       <p className="text-white  mt-2">
         Checkout our weekly updated trending collection.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-8 ">
         {primaryTrendingImgS.map((item, index) => (
           <div key={index} className="">
             {/* Main Image */}
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg ">
               <img
                 src={item.secImg}
                 alt={item.title}

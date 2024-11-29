@@ -9,7 +9,7 @@ import HeroSec from "../component/HeroSec";
 
 function HomePage() {
   return (
-    <div>
+    <div >
       <HeroSec />
       <TrendingCol />
       <TopCreators />

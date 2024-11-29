@@ -10,7 +10,7 @@ function BrowseCategory() {
   };
 
   return (
-    <div className="py-8  sm:px-8 px-[10%]">
+    <div className="py-8  sm:px-8 lg:px-[9%]">
       <h1 className="text-3xl font-bold  mb-8 text-white">Browse Categories</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((category, index) => (

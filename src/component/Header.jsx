@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { navLinks } from "./Database";
 import { Link } from "react-router-dom";
+
 
 
 function Header() {
@@ -25,15 +25,14 @@ function Header() {
           </div>
         </Link>
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6">
-          <ul className="flex space-x-6 font-semibold text-sm">
+        <div className="hidden md:flex items-center gap-6  ">
+          <ul className=" lg:flex lg:space-x-6 font-semibold text-sm">
             {navLinks.map((item, index) => {
               const { label, path } = item;
               return (
-                <Link
-                  to={path}
+                <Link to={path}
                   key={index}
-                  className="hover:text-[#a159ff] cursor-pointer transition ease-out duration-300"
+                  className="hover:text-[#a159ff] cursor-pointer transition ease-out duration-300 "
                 >
                   {label}
                 </Link>
@@ -41,7 +40,7 @@ function Header() {
             })}
           </ul>
           <Link to="/signup">
-            <button className="flex items-center space-x-2 bg-[#a159ff] text-white px-4 py-2 rounded-md hover:bg-[#8e4be2] transition duration-300">
+            <button className="flex items-center space-x-2 bg-[#a159ff] text-white px-4 py-2 rounded-md hover:bg-[#8e4be2] transition duration-300 ">
               <i className="fa-regular fa-user text-lg"></i>
             </button>
           </Link>
@@ -49,7 +48,7 @@ function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-2xl focus:outline-none"
+          className="md:hidden text-2xl focus:outline-none "
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -61,10 +60,10 @@ function Header() {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden mt-4 space-y-2 text-sm font-semibold transition-all duration-300 ${
+        className={`md:hidden mt-4 space-y-2 text-sm font-semibold transition-all duration-300  ${
           menuOpen
             ? "max-h-screen opacity-100"
-            : "max-h-0 overflow-hidden opacity-0"
+            : "max-h-0 overflow-hidden "
         }`}
       >
         {navLinks.map((item, index) => (

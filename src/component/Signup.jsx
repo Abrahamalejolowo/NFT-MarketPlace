@@ -6,7 +6,7 @@ function Signup() {
       {/* Image Section */}
       <div className="w-full lg:w-1/2 h-64 lg:h-full flex-shrink-0">
         <img
-          src='src/image/Image Placeholder.png'
+          src='public/image/Image sign in.png'
           alt="Placeholder"
           className="w-full h-full object-cover"
         />

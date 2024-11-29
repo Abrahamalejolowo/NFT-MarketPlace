@@ -19,17 +19,22 @@ import Marketplace from "./page/Marketplace";
 import Rankings from "./page/Rankings";
 import Connect from "./page/connect";
 import About from "./component/about";
+import ScrollToTop from "./component/ScrollToTop";
+import Signup from "./page/signup";
 function App() {
   return (
     <Router>
       <div className="bg-[#2b2b2b]">
-        {/* <Header /> */}
+        <Header />
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/marketplace/:id" element={<About />} />
-          <Route path="/Rankings" element={<Rankings />} />
+          <Route path="/Rankings" element={<Rankings  />} target="top" />
+          <Route path="/Signup" element={<Signup />} />
+
         </Routes>
         <FooterSce />
       </div>

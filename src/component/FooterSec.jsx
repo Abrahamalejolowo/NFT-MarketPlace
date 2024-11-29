@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -30,10 +31,10 @@ function Footer() {
               <a href="#">Explore</a>
             </li>
             <li>
-              <a href="#" className="hover:text-[#a159ff]">Marketplace</a>
+              <Link to={"/marketplace"} className="hover:text-[#a159ff]">Marketplace</Link>
             </li>
             <li>
-              <a href="#" className="hover:text-[#a159ff]">Rankings</a>
+              <Link to={"/rankings"} className="hover:text-[#a159ff]">Rankings</Link>
             </li>
             
           </ul>
@@ -46,15 +47,25 @@ function Footer() {
           <h3 className="text-sm">
             Get exclusive promotions & updates straight to your inbox.
           </h3>
-          <div className="flex flex-col space-y-4 w-full sm:flex-col sm:space-y-4 lg:flex-row lg:items-center lg:space-x-2 relative">
-           
+            <div className="flex flex-col space-y-4 w-full sm:flex-col sm:space-y-4 lg:flex-row lg:items-center lg:space-x-2 ">
+          <div className="flex rounded-full bg-white p-1 lg:w-[64%] ">
+        <input
+          type="email"
+          placeholder="Enter your email here"
+          className="lg:px-8 sm:px-3 md:px-7 py-2 px-5   text-sm text-gray-700 outline-none rounded-2xl"
+        />
+        <button className="px-4 py-2 text-sm font-medium text-white bg-purple-500 rounded-full hover:bg-purple-600 " onClick={{prompt:"Thank for subscribe"}}>
+          Subscribe
+        </button>
+      </div>
           </div>
         </div>
       </div>
       {/* Footer Bottom */}
-      <p className="mt-4 text-center text-sm text-gray-400">
+      <p className="mt-4 text-center text-sm text-gray-400 " >
         Ⓒ NFT Market. Use this template freely.
       </p>
+      
     </footer>
   );
 }

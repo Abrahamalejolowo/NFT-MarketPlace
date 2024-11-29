@@ -1,9 +1,10 @@
 import React from "react";
 import { newTrading } from "./Database";
+import { Link } from "react-router-dom";
 
 function DIscoverMore() {
   return (
-    <section className="max-w-7xl mx-auto px-6 sm:px-8 py-12">
+    <section className="max-w-7xl mx-auto px-[9%] sm:px-8 py-12">
       {/* Header Section */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8">
         <div>
@@ -26,7 +27,7 @@ function DIscoverMore() {
             className="group relative bg-[#3b3b3b] rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105"
           >
             {/* Background Image with Animation */}
-            <div className="overflow-hidden">
+            <Link to={"/marketplace"}  className="overflow-hidden" >
               <img
                 src={trade.nt_bg_img}
                 alt={trade.nt_title}
@@ -36,7 +37,7 @@ function DIscoverMore() {
                   setTimeout(() => e.target.classList.remove("animate-pulse"), 300);
                 }}
               />
-            </div>
+            </Link>
 
             {/* Details Section */}
             <div className="p-4">
