@@ -24,12 +24,18 @@ function About() {
     findTheItemByIdInTheDatabase();
   }, [id]);
 
+<<<<<<< HEAD
   const handleBack = () => {
     const scrollPosition = window.scrollY;
     navigate(-1, {
       state: { scrollPosition },
     });
   };
+=======
+  const HandleBack = () => {
+    history.back(-1)
+  }
+>>>>>>> ab211ca396f5efca392bbf6e006087d572bdb17a
 
   return (
     <div className="bg-[#2b2b2b] pt-28 min-h-screen text-white">
