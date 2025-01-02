@@ -41,7 +41,7 @@ function HowITWorks() {
       {/* line two */}
       <div className="bg-[none]  lg:bg-[#3b3b3b] rounded-lg mt-11 flex flex-col lg:flex-row justify-between items-center px-5 py-11 space-y-5 lg:space-y-0">
         <img src="public/image/Photo.png" className=" object-contain" />
-        <div className="text-center lg:text-left space-y-3 lg:space-y-2">
+        <div className="text-center lg:text-left space-y-3 lg:space-y-2 mr-32 ">
           <h1 className="text-lg lg:text-xl font-bold text-white">
             Join Our Weekly Digest
           </h1>

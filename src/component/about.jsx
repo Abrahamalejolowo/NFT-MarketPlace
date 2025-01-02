@@ -24,24 +24,21 @@ function About() {
     findTheItemByIdInTheDatabase();
   }, [id]);
 
-<<<<<<< HEAD
   const handleBack = () => {
     const scrollPosition = window.scrollY;
     navigate(-1, {
       state: { scrollPosition },
     });
   };
-=======
   const HandleBack = () => {
     history.back(-1)
   }
->>>>>>> ab211ca396f5efca392bbf6e006087d572bdb17a
 
   return (
     <div className="bg-[#2b2b2b] pt-28 min-h-screen text-white">
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <p className="text-lg font-bold">Loading.....</p>
+          <p className="text-lg font-bold">Loading...</p>
         </div>
       ) : data ? (
         <div className="container mx-auto px-5 lg:px-20">

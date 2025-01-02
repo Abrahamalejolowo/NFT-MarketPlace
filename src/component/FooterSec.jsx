@@ -52,7 +52,7 @@ function Footer() {
         <input
           type="email"
           placeholder="Enter your email here"
-          className="lg:px-8 sm:px-3 md:px-7 py-2 px-5   text-sm text-gray-700 outline-none rounded-2xl"
+          className="lg:px-8 sm:px-3 md:px-7 py-2 px-5 w-full  text-sm text-gray-700 outline-none rounded-2xl"
         />
         <button className="px-4 py-2 text-sm font-medium text-white bg-purple-500 rounded-full hover:bg-purple-600 " onClick={{prompt:"Thank for subscribe"}}>
           Subscribe

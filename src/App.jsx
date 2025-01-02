@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "./App.css";
 import BrowseCategory from "./component/BrowseCategory";
 import DiscoverMore from "./component/DIscoverMore";
@@ -14,15 +13,18 @@ import HomePage from "./page/HomePage";
 import Marketplace from "./page/Marketplace";
 import Rankings from "./page/Rankings";
 import Connect from "./page/Connect";
-import About from "./component/About";
 import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
+import About from "./component/About";
+import Login from "./component/Login";
+import Animakid from "./component/profile";
 function App() {
   return (
     <Router>
       <div className="bg-[#2b2b2b]">
         <Header />
-        <ScrollToTop />
+        <Animakid/>
+        {/* <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/connect" element={<Connect />} />
@@ -30,7 +32,9 @@ function App() {
           <Route path="/marketplace/:id" element={<About />} />
           <Route path="/Rankings" element={<Rankings />} target="top" />
           <Route path="/Signup" element={<Signup />} />
-        </Routes>
+          <Route path="/Login" element={<Login />} />
+          
+        </Routes> */}
         <FooterSce />
       </div>
     </Router>

@@ -3,22 +3,21 @@ import { nftData } from "./Database";
 
 const Animakid = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen px-6 md:px-[7%]">
+    <div className="bg-[#32b2b2b] text-white min-h-screen px-6 md:px-[7%]">
       {/* Header Section */}
       <header className="relative w-full">
         {/* Banner Image */}
         <img
-            src="src/image/d79c0afb936279fe8427b823bc6218b6.png"
+            src="public/image/d79c0afb936279fe8427b823bc6218b6.png"
             alt="Profile Avatar"
             className="w-24 h-24 absolute md:w-32 md:h-32 rounded-3xl border-white top-60  left-6 md:left-20 shadow-lg border-4"
           />
         <img
-          src="src/image/7d032bf6bdce767947a59acb6afb7b99.png"
+          src="public/image/7d032bf6bdce767947a59acb6afb7b99.png"
           alt="Banner"
           className="w-full h-64 md:h-80 object-cover"
         />
-        {/* Gradient Overlay */}
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div> */}
+        
 
         {/* Profile Info */}
         <div className=" mt-16">
@@ -26,8 +25,8 @@ const Animakid = () => {
             <div className="lg:flex md:flex justify-between items-center">
               <h1 className="text-2xl md:text-4xl font-bold">Animakid</h1>
               <div className="flex gap-4 mr-4 md:mr-[10%]">
-                <img src="src/image/Button.png" alt="Button 1" className="h-8 md:h-15 " />
-                <img src="src/image/Button (1).png" alt="Button 2" className="h-8 md:h-15" />
+                <img src="public/image/Button.png" alt="Button 1" className="h-8 md:h-15 " />
+                <img src="public/image/Button (1).png" alt="Button 2" className="h-8 md:h-15" />
               </div>
             </div>
 
@@ -54,11 +53,11 @@ const Animakid = () => {
             <div className="mt-6">
               <p className="text-lg md:text-xl">Links</p>
               <div className="flex gap-3 mt-2">
-                <a href="#"><img src="src/image/Globe.png" alt="Website" className="h-6 md:h-8" /></a>
-                <a href="#"><img src="src/image/Storefront.png" alt="Storefront" className="h-6 md:h-8" /></a>
-                <a href="#"><img src="src/image/YoutubeLogo.png" alt="YouTube" className="h-6 md:h-8" /></a>
-                <a href="#"><img src="src/image/TwitterLogo.png" alt="Twitter" className="h-6 md:h-8" /></a>
-                <a href="#"><img src="src/image/InstagramLogo.png" alt="Instagram" className="h-6 md:h-8" /></a>
+                <a href="#"><img src="public/image/Globe.png" alt="Website" className="h-6 md:h-8" /></a>
+                <a href="#"><img src="public/image/Storefront.png" alt="Storefront" className="h-6 md:h-8" /></a>
+                <a href="#"><img src="public/image/YoutubeLogo.png" alt="YouTube" className="h-6 md:h-8" /></a>
+                <a href="#"><img src="public/image/TwitterLogo.png" alt="Twitter" className="h-6 md:h-8" /></a>
+                <a href="#"><img src="public/image/InstagramLogo.png" alt="Instagram" className="h-6 md:h-8" /></a>
               </div>
             </div>
             
@@ -79,7 +78,7 @@ const Animakid = () => {
           {nftData.map((nft, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-lg overflow-hidden shadow hover:scale-105 transition-transform"
+              className="bg-[#3b3b3b] rounded-lg overflow-hidden shadow hover:scale-105 transition-transform"
             >
               <img
                 src={nft.image}
