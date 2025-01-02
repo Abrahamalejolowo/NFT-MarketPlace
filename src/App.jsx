@@ -23,8 +23,8 @@ function App() {
     <Router>
       <div className="bg-[#2b2b2b]">
         <Header />
-        <Animakid/>
-        {/* <ScrollToTop />
+       
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/connect" element={<Connect />} />
@@ -34,7 +34,7 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
           
-        </Routes> */}
+        </Routes>
         <FooterSce />
       </div>
     </Router>
