@@ -4,7 +4,7 @@ import { Time } from "./Database";
 
 function Ranking() {
   return (
-    <section className="bg-[#2b2b2b] py-10 pt-[5%]">
+    <section className="bg-[#2b2b2b] py-10 px-[5%] pt-[5%]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <h1 className="text-[32px] md:text-[40px] text-white font-bold text-center md:text-left">
@@ -63,7 +63,6 @@ function Ranking() {
                   {rank.name}
                 </span>
               </div>
-              {/* Stats */}
               <span className="hidden sm:block text-[#00AC4F] text-center w-[20%]">
                 {rank.change || "+1.40%"}
               </span>

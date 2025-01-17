@@ -2,6 +2,7 @@
 import React from "react";
 import { NFTS } from "./Database";
 import { Link } from "react-router-dom";
+import About from "./About";
 
 function Marketplace() {
   return (
