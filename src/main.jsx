@@ -7,5 +7,5 @@ import { MetaMaskUIProvider } from '@metamask/sdk-react-ui'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 )
