@@ -1,6 +1,6 @@
 import "./App.css";
 import BrowseCategory from "./component/BrowseCategory";
-import DiscoverMore from "./component/DIscoverMore";
+import DiscoverMore from "./component/DiscoverMore";
 import FooterSce from "./component/FooterSec";
 import Header from "./component/Header";
 import HeroSec from "./component/HeroSec";
@@ -15,8 +15,9 @@ import Rankings from "./page/Rankings";
 import Connect from "./page/Connect";
 import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
-import About from "../src/component/About";
-import Login from "../src/component/Login";
+import About from "./component/About";
+import Login from "./component/Login";
+
 function App() {
   return (
     <Router>
@@ -28,11 +29,10 @@ function App() {
           <Route path="/connect" element={<Connect />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/marketplace/:id" element={<About />} />
-          <Route path="/Rankings" element={<Rankings />} target="top" />
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/rankings" element={<Rankings />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
-        <About />
         <FooterSce />
       </div>
     </Router>
