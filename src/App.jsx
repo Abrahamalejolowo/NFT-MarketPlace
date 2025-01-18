@@ -9,7 +9,7 @@ import Connect from "./page/Connect";
 import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
 import About from "./component/About";
-import Login from "./page/Login";
+import LoginCon from "./page/Login";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/marketplace/:id" element={<About />} />
           <Route path="/rankings" element={<Rankings />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/Login" element={<LoginCon />} />
         </Routes>
         <FooterSce />
       </div>
