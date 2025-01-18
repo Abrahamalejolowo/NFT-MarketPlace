@@ -15,8 +15,8 @@ import Rankings from "./page/Rankings";
 import Connect from "./page/Connect";
 import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
-import About from "./component/About";
-import Login from "./component/Login";
+import About from "../src/component/About";
+import Login from "../src/component/Login";
 function App() {
   return (
     <Router>
@@ -32,9 +32,8 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
         </Routes>
-        <About/>
+        <About />
         <FooterSce />
-        
       </div>
     </Router>
   );
