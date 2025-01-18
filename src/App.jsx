@@ -15,7 +15,7 @@ import Rankings from "./page/Rankings";
 import Connect from "./page/Connect";
 import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
-import About from "./component/About";
+// import About from "./component/About";
 import Login from "./component/Login";
 function App() {
   return (
