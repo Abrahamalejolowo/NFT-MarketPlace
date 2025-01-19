@@ -1,7 +1,6 @@
 import React from "react";
 import { NFTS } from "./Database";
 import { Link } from "react-router-dom";
-import About from "./About";
 
 function Marketplace() {
   return (
@@ -39,7 +38,7 @@ function Marketplace() {
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-4 bg-[#3b3b3b] mx-auto px-[11%] pr-[10%]"
       >
         {NFTS.map((rank, index) => (
-          <Link to={`/marketplace/${rank.id}`} key={index}>
+          <Link to={`/about/${rank.id}`} key={index}>
             <div className="bg-[#2b2b2b] lg:w-[90%] w-full rounded-2xl overflow-hidden shadow-lg pb-5 hover:scale-105 transition-transform ">
               <img
                 src={rank.image}

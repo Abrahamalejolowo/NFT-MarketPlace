@@ -21,10 +21,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/marketplace/:id" element={<About />} />
+          <Route path="/about/:id" element={<About />} />
           <Route path="/rankings" element={<Rankings />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/Login" element={<LoginCon />} />
+          <Route/>
         </Routes>
         <FooterSce />
       </div>
