@@ -8,8 +8,8 @@ import Rankings from "./page/Rankings";
 import Connect from "./page/Connect";
 import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
-import About from "./component/About";
 import LoginCon from "./page/Login";
+import About from "./component/About"
 
 function App() {
   return (
