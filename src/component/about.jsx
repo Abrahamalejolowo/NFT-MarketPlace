@@ -101,7 +101,7 @@ function BuyButton() {
   const handleBuyClick = (e) => {
     e.preventDefault();
     if (window.confirm("Please connect your wallet to proceed.")) {
-      navigate("/connect");
+      navigate("/connect`");
     }
   };
 
