@@ -17,7 +17,7 @@ const Animakid = () => {
           alt="Banner"
           className="w-full h-64 md:h-80 object-cover"
         />
-        
+         
 
         {/* Profile Info */}
         <div className=" mt-16">

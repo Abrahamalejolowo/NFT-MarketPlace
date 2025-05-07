@@ -10,6 +10,7 @@ import ScrollToTop from "./component/ScrollToTop";
 import Signup from "./page/Signup";
 import LoginCon from "./page/Login";
 import About from "./component/About"
+import Connectwallet from "./component/Connectwallet";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/connect" element={<Connect />} />
+          <Route path="**" element={<Connectwallet />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/about/:id" element={<About />} />
           <Route path="/rankings" element={<Rankings />} />
